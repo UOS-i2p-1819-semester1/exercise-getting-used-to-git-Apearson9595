@@ -31,4 +31,12 @@ class NameCombinerTest {
 		assertEquals("Andrew M Pearson", nc.fullName("ANDREW", "mArK", "peaRsoN"));
 					
 	}
+	
+	@Test
+	// test that case is formatted correctly
+	void test3() {
+		NameCombiner nc = new NameCombiner();
+		assertEquals("Andrew M Pearson", nc.fullName("ANDREW", "mArK", "peaRsoN"));
+	}
+	
 }
