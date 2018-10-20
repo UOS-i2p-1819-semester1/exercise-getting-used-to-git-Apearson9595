@@ -33,10 +33,16 @@ class NameCombinerTest {
 	}
 	
 	@Test
-	// test that case is formatted correctly
-	void test3() {
+	// test format of double barrelled surname
+	void test5() {
 		NameCombiner nc = new NameCombiner();
-		assertEquals("Andrew M Pearson", nc.fullName("ANDREW", "mArK", "peaRsoN"));
+		assertEquals("Andrew Pearson", nc.fullName("ANDREW", null, "pearson"));
 	}
 	
+	@Test
+	// test format of double barrelled surname
+	void test6() {
+		NameCombiner nc = new NameCombiner();
+		assertEquals("Forename required", nc.fullName(null, "Mark", "pearson"));
+	}
 }
