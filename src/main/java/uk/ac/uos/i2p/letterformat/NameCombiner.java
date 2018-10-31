@@ -14,7 +14,7 @@ public class NameCombiner {
 		}
 
 		if (surName == null){
-			String letterName = "Forename required";
+			String letterName = "Surname required";
 			return letterName;
 		}
 		String forenamecap = foreName.substring(0, 1).toUpperCase();
