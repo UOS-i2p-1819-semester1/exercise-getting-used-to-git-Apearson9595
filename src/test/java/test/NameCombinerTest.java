@@ -13,7 +13,7 @@ class NameCombinerTest {
 	void test() {
 		NameCombiner nc = new NameCombiner();
 		assertEquals("Andrew Pearson", nc.fullName("AndreW", " ", "PeaRsoN"));
-					
+				
 	}
 
 	@Test
