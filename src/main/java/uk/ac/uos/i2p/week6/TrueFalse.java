@@ -1,15 +1,14 @@
 package uk.ac.uos.i2p.week6;
 
-public class TrueFalse implements Describe {
+public class TrueFalse implements Describable {
+private boolean myBoolean;
 
-	@Override public String describe() {
+public TrueFalse (boolean value) {
+	myBoolean = value;
+}
+@Override public String describe() {
 		
-		int x = 10;
-		boolean y = x == 10;
-		
-		String str = String.valueOf(y);
-		
-		return str;
+		return Boolean.toString(myBoolean);
 	}
 
 }
